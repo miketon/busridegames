@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+	 <head>
+		<title>HTML5 2D Game Engine</title>
+		<style type="text/css">
+			.hd  {background: #b00; color: white; height: 40px; padding: 5px;}
+			.module {border: 1px solid #f00; width: 300px; float: left; margin: 20px; background: white;}
+	 		body {font-family: Arial,Helvetica,sans-serif;}
+	 		canvas {
+					-webkit-box-shadow: 0 0 0.5em grey;
+			}
+			div.centeredDiv { text-align: center }
+		</style>
+		<script type="text/javascript" src="main.js"></script>
+		<script type="text/javascript" src="GameObjectManager.js"></script>
+		<script type="text/javascript" src="GameObject.js"></script>
+		<script type="text/javascript" src="AnimatedGameObject.js"></script>
+		<script type="text/javascript" src="Level.js"></script>
+		<script type="text/javascript" src="Player.js"></script>
+	 </head>
+	 
+	 <body>
+	 	<div class="centeredDiv">
+			<div class = "hd"><p>Javascript PROTOTYPE: 2D Game Engine</p></div>
+			<canvas id="canvas" width="640" height="480" style="border: 1px solid #aaa;" moz-opaque="true">
+	 			<p>This demo requires a web browser which supports HTML5 canvas.</p>
+			</canvas>
+			<div class = "hd"><p>(MOVE:arrow key | JUMP:spacebar) </p></div>
+		</div>
+		<div class="linkButtons">
+			<div id="UnityGame">
+    			<button onclick="location.href='Rookery_Final/Rookery_Final.html'">Rookery</button>
+            </div>
+	        <div id="UnityGame">
+    			<button onclick="location.href='2D_Adventure_00p5/2D_Adventure_00p5.html'">StickFigureAdventure_00</button>
+            </div>
+            <!--	
+			<div id="UnityGame">
+    			<button onclick="location.href='2D_Adventure_00/2D_Adventure.html'">StickFigureAdventure_00</button>
+            </div>
+            -->	
+            <div id="UnityGame">
+    			<button onclick="location.href='2D_Adventure_01/2D_Adventure.html'">StickFigureAdventure_01</button>
+            </div>	            
+            <div id="UnityGame">
+    			<button onclick="location.href='Duck_Adventure/Duck_Adventure.html'">Duck_Adventure</button>
+            </div>	
+            <div id="UnityGame">
+    			<button onclick="location.href='Liefeld_Adventures/Liefeld_Adventures.html'">Liefeld_Adventures</button>
+            </div>		
+            <div id="UnityGame">
+    			<button onclick="location.href='CuteTankForce_MassOut/CuteTankForce_MassOut.html'">CuteTankForce_MassOut</button>
+            </div>		
+            <div id="UnityGame">
+    			<button onclick="location.href='CuteTankForce_Production/CuteTankForce_Production.html'">CuteTankForce_Production</button>
+            </div>				
+            <div id="Video">
+    			<button onclick="location.href='http://www.youtube.com/user/MTON1109/videos?sort=dd&tag_id=UC__mQBnhaGmg4NarxBXb41w.3.prototype&shelf_index=0&view=46'">PrototypeVids</button>
+            </div>            
+            <div id="Repo">
+    			<button onclick="location.href='https://github.com/miketon'">Github</button>
+            </div>
+            <div id="Blog">
+    			<button onclick="location.href='http://miketon.posthaven.com/'">Posthaven Blog</button>
+            </div>
+        </div>
+        <div class="centeredDiv">
+            <iframe width="192" height="128" src="//www.youtube.com/embed/hg7P-Nv-EgU" frameborder="0" allowfullscreen></iframe><!Rookery>
+            <iframe width="192" height="128" src="//www.youtube.com/embed/xSi8Hut5sxk" frameborder="0" allowfullscreen></iframe><!XNA_RCR>
+            <iframe width="192" height="128" src="//www.youtube.com/embed/FNSrCZSWGKg" frameborder="0" allowfullscreen></iframe><!GameMaker>
+            <iframe width="192" height="128" src="//www.youtube.com/embed/bg94wAZi7QM" frameborder="0" allowfullscreen></iframe><!StickFig_00>
+            <iframe width="192" height="128" src="//www.youtube.com/embed/fYwgPQn-p-Y" frameborder="0" allowfullscreen></iframe><!StickFig_AI>
+			<iframe width="192" height="128" src="//www.youtube.com/embed/fW5yCiKGD4Q" frameborder="0" allowfullscreen></iframe><!BearHands>
+			<iframe width="192" height="128" src="//www.youtube.com/embed/EHnvkig801o" frameborder="0" allowfullscreen></iframe><!FireFly>
+			<iframe width="192" height="128" src="//www.youtube.com/embed/u-jeXNlm_bs" frameborder="0" allowfullscreen></iframe><!CuteTank_00>
+			<iframe width="192" height="128" src="//www.youtube.com/embed/aQ_YyyqJXuo" frameborder="0" allowfullscreen></iframe><!CuteTank_Alpha>	
+			<iframe width="192" height="128" src="//www.youtube.com/embed/d1LT7vyFfM4" frameborder="0" allowfullscreen></iframe><!CuteTank_Network>	
+			<div class = "hd"><p>Prototype Videos</p></div>
+		</div>
+    <div id="cse" style="width: 100%;">Loading</div>
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script type="text/javascript"> 
+      google.load('search', '1', {language : 'en'});
+      google.setOnLoadCallback(function() {
+        var customSearchControl = new google.search.CustomSearchControl('006260085217365216815:nyfk94pk6kc');
+        customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+        customSearchControl.draw('cse');
+      }, true);
+    </script>
+    <link rel="stylesheet" href="http://www.google.com/cse/style/look/default.css" type="text/css" />
+	 </body>
+	 
+	 <!embed src="sound/hazy_shade_of_winter.mid" width="320" height="240" autoplay="true" hidden="false" loop="true" volume="50"><!/embed>
+</html>
