@@ -17,6 +17,41 @@
 /* #Site Styles
 ================================================== */
 
+*{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*Why boxsize??? */
+
+/*bands*/
+.band{
+  background: url(../images/bg_ltgrey.png) repeat #f8f8f8;
+}
+
+.band_nav{
+  background: url(../images/stitch_hr.png) repeat-x,
+              url(../images/bg_dkgrey.png) repeat,
+              url(../images/stitch_hr.png) repeat-x, /*doesn't work on bottom*/
+              #343434;
+}
+
+.band_footer{
+  background: url(../images/stitch_large.png) repeat-x,
+              url(../images/bg_dkgrey.png) repeat,
+              #343434;
+  padding: 49px 0px 14px 0px;
+  color  : #e0e0e0;
+}
+
+.band_bottom{
+  background: url(../images/stitch_staggered.png) repeat-x,
+              url(../images/bg_dkergrey.png) repeat, 
+              #f8f8f8;
+  /*background-color: #232323;*/
+}
+
 /* #Page Styles
 ================================================== */
 
