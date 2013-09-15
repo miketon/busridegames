@@ -83,7 +83,7 @@ figure{
   color : #b0b0b0;
 }
 
-.band_footer{
+.band.footer{
   background: url(../images/stitch_large.png) repeat-x,
   url(../images/bg_dkgrey.png) repeat,
   #343434;
@@ -91,7 +91,7 @@ figure{
   color  : #e0e0e0;
 }
 
-.band_bottom{
+.band.bottom{
   background: url(../images/stitch_staggered.png) repeat-x,
   url(../images/bg_dkergrey.png) repeat, 
   #f8f8f8;
@@ -210,6 +210,62 @@ nav.primary ul li:hover > a{ /* > == direct descendent; else entire list highlig
   background: #424242;
 }
 
+/* Footer */
+footer h3.logo{
+  margin: 14px 0 21px;
+}
+
+footer h3.logo a{
+  width: 200;
+  height: 35;
+  display: block;
+  background: url(../images/sprite.png) no-repeat 0 -50px;
+  
+  font-size: 0/0 a; /*why doesn't 'font: 0/0' a work here?*/
+  text-shadow: none;
+  color: transparent;
+}
+
+footer.container header{
+  background: url(../images/diagonal_dark.png) repeat;
+  font-size: 14px;
+  line-height: 1em;
+  margin: 28px 0 0;
+}
+
+footer.container h4{
+  color: #8f8f8f;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: arial sans-serif;
+  
+  background: url(../images/bg_dkgrey.png) repeat;
+  display: inline;
+  padding: 0 10px;
+  margin: 0 0 0 14px; 
+
+}
+
+footer a,
+footer a:visited{
+  color: #8f8f8f;
+}
+
+footer a:hover{
+  text-decoration: none;
+  color: #bfbfef;
+}
+
+.bottom footer{
+  font-size: 12px;
+}
+
+div.last-credit{
+  text-align: right;
+}
 
 
 /*
@@ -264,6 +320,15 @@ html[xmlns] .slides {display: block;}
 /* If you are not using another script, such as Modernizr, make sure you
  * include js that eliminates this class on page load */
 .no-js .slides > li:first-child {display: block;}
+
+/* Direction Nav */
+.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(../images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
+.flex-direction-nav .flex-prev {left: -36px;}
+.flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
+.flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
 
 /* FlexSlider Custom */
 .flexslider{

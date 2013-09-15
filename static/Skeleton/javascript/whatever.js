@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
   $('.flexslider').flexslider({
-    directionNav:false,
+    /*directionNav:false,*/
     animation: "slide",
   }); 
 });
