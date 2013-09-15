@@ -46,6 +46,13 @@
 /* #Site Styles
 ================================================== */
 
+/* images */
+figure{
+  padding : 6px;
+  border : 1px solid #ededed;
+  background : #fff;
+}
+
 *{
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -59,7 +66,16 @@
   background: url(../images/bg_ltgrey.png) repeat #f8f8f8;
 }
 
-.band_nav{
+.band.head{
+  padding: 56px 0px 14px 0px;
+  background: url(../images/stitch_hr.png) repeat-x,
+  url(../images/bg_dkgrey.png) repeat,
+  url(../images/stitch_hr.png) repeat-x, /*doesn't work on bottom*/
+  #343434;
+  color : #b0b0b0;
+}
+
+.band.nav{
   background: url(../images/stitch_hr.png) repeat-x,
   url(../images/bg_dkgrey.png) repeat,
   url(../images/stitch_hr.png) repeat-x, /*doesn't work on bottom*/
@@ -149,7 +165,7 @@ nav.primary ul ul {
   z-index: 999;
   background: url(../images/bg_dkgrey.png);
   
-  min-width: 200%;
+  min-width: 100%;
   
   -webkit-transition: opacity 0.4s ease-out;
   -moz-transition: opacity 0.4s ease-out;
@@ -187,10 +203,104 @@ nav.primary ul ul li a{
   display: block;
   line-height: 35px;
   text-transform: none;
+  white-space: nowrap;
 }
 
 nav.primary ul li:hover > a{ /* > == direct descendent; else entire list highlight*/
   background: #424242;
+}
+
+
+
+/*
+ * jQuery FlexSlider v2.2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+
+/* Browser Resets
+*********************************/
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+
+/* Icon Fonts
+*********************************/
+/* Font-face Icons */
+@font-face {
+	font-family: 'flexslider-icon';
+	src:url('fonts/flexslider-icon.eot');
+	src:url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/flexslider-icon.woff') format('woff'),
+		url('fonts/flexslider-icon.ttf') format('truetype'),
+		url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "\0020"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+/* FlexSlider Custom */
+.flexslider{
+  margin: 21px 0;
+}
+
+.flex-control-nav{
+  width: 100%;
+  text-align: center;
+}
+
+.flex-control-nav li{
+  display: inline;
+  margin: 0px 5px;
+}
+
+.flex-control-nav li a{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: #a5a5a5;
+  border: 1px solid #b5b5b5;
+  
+  cursor: pointer;
+  
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.flex-control-nav li a.flex-active,
+.flex-control-nav li a:hover{
+  background: #f5f5f5;
 }
 
 /* #Page Styles
