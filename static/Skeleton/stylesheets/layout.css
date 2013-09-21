@@ -45,7 +45,10 @@
 
 /* #Site Styles
 ================================================== */
-
+/* jquery interaction classes */
+hover-highlight{
+  background:#f5f5f5;
+}
 /* images */
 figure{
   padding : 6px;

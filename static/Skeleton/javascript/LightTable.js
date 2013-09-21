@@ -14,6 +14,15 @@ $("figure").css({
 });
 //$("figure").css("background", "url(./images/bg_direction_nav.png)");
 
+$(".flexslider").css({
+  "margin":"0px",
+  "padding":"0 21px 0 21px", //expand sides for arrow
+})
+
+$(".flexslider .slides img").css({
+  "width":"100%",
+})
+
 $(".flex-direction-nav a").css({
   "background":"url(./images/bg_direction_nav_00.png) no-repeat 0 0",
   "width":"29px",
@@ -27,6 +36,31 @@ $(".flex-direction-nav a").css({
   "-webkit-transition":"all .3s ease",
   //"opacity":"0",
 });
+
+/*
+$(".flex-control-nav li a:hover").css({
+  "background":"#f5f5f5",
+})
+*/
+
+$(".flex-control-nav li a").hover(
+    function(){
+      $(this).toggleClass('hover-highlight'); //toggle on and off highlight class
+    }
+    /*  //Not as good; requires you to know previous color
+    function () {
+      $(this).css({"background":"#f5f5f5"});
+    },
+    function () {
+      $(this).css({"background":"#a5a5a5"});
+    }
+    */
+);
+
+$(".flex-control-nav li a.flex-active, .flex-control-nav li a:hover").css({
+//$(".flex-control-nav li a.flex-active").css({
+  "background":"#f5f5f5",
+})
 //$("footer.container header").css("background", "url(../images/diagonal_dark.png) repeat");
 
 $(".flex-control-nav li a").css({
@@ -42,7 +76,7 @@ $(".flex-control-nav li a").css({
   "text-shadow":"none",
   "color":"transparent",
 
-  "-webkit-border-radius":"50px",
+  "-webkit-border-radius":"10px",
   "-moz-border-radius":"10px",
-  "border-radius":"10px",
+  "border-radius":"9px",
 });
