@@ -37,24 +37,30 @@ $(".flex-direction-nav a").css({
   //"opacity":"0",
 });
 
+$(".flex-direction-nav .flex-next").css({
+  "background-position":"100% 0", //shift uv
+})
+
+
 /*
 $(".flex-control-nav li a:hover").css({
   "background":"#f5f5f5",
 })
 */
 
-$(".flex-control-nav li a").hover(
-    function(){
-      $(this).toggleClass('hover-highlight'); //toggle on and off highlight class
-    }
-    /*  //Not as good; requires you to know previous color
-    function () {
-      $(this).css({"background":"#f5f5f5"});
-    },
-    function () {
-      $(this).css({"background":"#a5a5a5"});
-    }
-    */
+$(".flex-control-nav li a").hover( //jquery handling css psuedo states
+  /*
+  function(){
+    $(this).toggleClass('hover-highlight'); //toggle on and off highlight class
+  }
+  */
+    //Not as good; requires you to know previous color
+  function () {
+    $(this).css({"background":"#f5f5f5"});
+  },
+  function () {
+    $(this).css({"background":"#a5a5a5"});
+  }
 );
 
 $(".flex-control-nav li a.flex-active, .flex-control-nav li a:hover").css({
