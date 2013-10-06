@@ -45,6 +45,12 @@
 
 /* #Site Styles
 ================================================== */
+
+centeredDiv{
+  text-align: center;
+  display:block;
+  background : #fff;
+}
 /* jquery interaction classes */
 hover-highlight{
   background:#f5f5f5;
@@ -321,7 +327,7 @@ footer.container li{
 
 /* FlexSlider Necessary Styles
 *********************************/
-.flexslider {margin: 0; padding: 0;}
+.flexslider {margin: 0; padding: 0 21px 0 21px;}
 .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {width: 100%; display: block;}
 .flex-pauseplay span {text-transform: capitalize;}
@@ -337,7 +343,10 @@ html[xmlns] .slides {display: block;}
 .no-js .slides > li:first-child {display: block;}
 
 /* Direction Nav */
-.flex-direction-nav a {width: 52px; height: 52px; margin: -42px -5% 0; display: block; background: url(../images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav a {width: 29px; height: 27px; margin: -35px -21px 0;
+  display: block; background: url(../images/bg_direction_nav_00.png) no-repeat 0 0;
+  position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0;
+  -webkit-transition: all .3s ease;}
 .flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
 .flex-direction-nav .flex-prev {left: -36px;}
 .flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
