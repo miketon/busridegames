@@ -1,0 +1,6 @@
+Time Shooter Instructions
+Move with WASD 
+Look around with mouse 
+Shoot older shot with left click
+Shoot younger shot with right click
+pick up with middle click(only small items)

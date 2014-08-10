@@ -1,0 +1,9 @@
+Choose attack type with 1, 2, 3 keys
+1 is straight attack
+2 is verticle attack
+3 is horizontal attack
+shoot attack with left click
+melee attack with right click
+move with WASD and look around with mouse
+reinsert model with insert 
+home resets the level

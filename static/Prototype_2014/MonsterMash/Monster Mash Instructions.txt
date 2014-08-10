@@ -1,0 +1,12 @@
+Monster Mash Instructions
+
+Startup
+
+use Backspace to clear default name 
+press Enter to save name
+use Up and Down arrow to move to next or previouse setup option
+use Left and Right Arrow to navigate to a weapon and torso
+When done press End Button
+
+In Game
+left click on a neighboring tile to make the monster move there

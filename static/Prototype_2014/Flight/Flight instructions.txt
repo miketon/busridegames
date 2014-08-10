@@ -1,0 +1,43 @@
+Flight Instructions
+
+
+
+select flight mode with 1,2,3
+
+
+
+flight mode 1 traditional flight
+gain speed with R
+lose speed down to minimum speed with F
+Pitch up with W
+pitch down with S
+yaw left with A
+yaw right with D
+roll left with Q
+roll right with E
+
+
+
+flight mode 2 dragonball flight
+go up a speed level with Space
+go down a speed level with Left Shift
+forward with W
+backward with S
+strafe left with A
+strafe right with D
+rotate left 90 degrees with Q
+rotate right 90 degrees with E
+rise up with R
+lower with F
+double tap a move to leap that direction
+
+
+
+flight mode 3 Superman flight
+look around superman using mouse
+move in direction camera facing with W
+move back based on camera facing with S
+strafe right based on camera facing with D
+strafe left based on camera facing with A
+gain speed with R
+lose speed with F
